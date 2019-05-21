@@ -8,5 +8,6 @@ Edit config in <strong>/asterios-config/config.php</strong> and <strong>/asterio
 
 Enter your ProfileId 
 to obtain an api key here https://asterios.ws/dev/api_key
+<h5>! Rename file "rename.htaccess" to ".htaccess"</h5>
 
 <img src="https://asterios.ws/post/asterios_846a711fbd.jpg">
