@@ -1,0 +1,36 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+#SetEnv APPLICATION_ENV development
+
+DirectoryIndex /asterios-templates/index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+) $1 [L]
+RewriteCond %{DOCUMENT_ROOT}/asterios-templates/index.php%{REQUEST_URI} -f
+RewriteRule ^(.+) /asterios-templates/index.php$1 [L]
+
+
+
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ /asterios-templates/index.php [F,L]
+
+
+RewriteEngine on 
+ 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+ 
+RewriteRule ^(.*)$ /asterios-templates/index.php?q=$1 [L,QSA]
+
+#RewriteRule !\.(js|ico|gif|jpg|png|css|xml|xslt)$ /index.php
+
+Order Deny,Allow
+
