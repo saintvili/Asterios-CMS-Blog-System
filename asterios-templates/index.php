@@ -4,8 +4,7 @@ include_once("../asterios-config/config.php");
 include_once('../asterios-config/profile.php');
 include_once('../asterios-config/security-photo.php');
 include_once('../asterios-config/secure-news.php');
-
-
+include_once('../asterios-config/secure-shop.php');
 ?>
 <!DOCTYPE html>
     <head>
@@ -18,6 +17,9 @@ include_once('../asterios-config/secure-news.php');
         <link rel="stylesheet" href="https://repository.asterios.ws/asterios-cms/v1/main-page/css/font-awesome.css">
         <link rel="stylesheet" href="https://repository.asterios.ws/asterios-cms/v1/main-page/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://repository.asterios.ws/asterios-cms/v1/main-page/css/templatemo-style.css">
+        
+        <link rel="stylesheet/less" type="text/css" href="https://repo.asterios.ws/asterios-cms/callback_v1/less/main.less" />
+        <script src="https://repo.asterios.ws/asterios-cms/callback_v1/js/less.js" type="text/javascript"></script>
         <style>
             .banner-bg {
   padding: 260px 80px;
@@ -56,7 +58,9 @@ include_once('../asterios-config/secure-news.php');
                     <ul class="navigation">
                         <li><a href="#news"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="#galler"><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
-                        <li><a href="https://asterios.ws/<?php echo $obj->username; ?>"target="_blank"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                    <li><a href="#shop"><i class="fa fa-newspaper-o"></i>Shop</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -79,7 +83,9 @@ include_once('../asterios-config/secure-news.php');
                 <ul class="navigation">
                              <li><a href="#news"><i class="fa fa-home"></i>Home</a></li>
                         <li><a href="#galler"><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
-                        <li><a href="https://asterios.ws/<?php echo $obj->username; ?>"target="_blank"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                        <li><a href="#shop"><i class="fa fa-newspaper-o"></i>Shop</a></li>
+
                 </ul>
             </div> <!-- .main-navigation -->
           
@@ -115,7 +121,6 @@ include_once('../asterios-config/secure-news.php');
                     </div> <!-- #about -->
                     </div>
                     <hr>
-                  
                    
                     <!-- PROJECTS -->
                     <div class="page-section" id="galler">
@@ -125,14 +130,29 @@ include_once('../asterios-config/secure-news.php');
                             <p>Photo user in Asterios Network.</p>
                         </div>
                     </div>
+                    
+                    <details> <!--I Add spoiler-->
+                         
+                    <div class="row projects-holder">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="<?php echo $pht0 ?>">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <div class="row projects-holder">
                         <div class="col-md-4 col-sm-6">
                             <div class="project-item">
                                 <img src="<?php echo $pht1 ?>">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
+                                        <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
                                     </div>
                                 </div>
                             </div>
@@ -142,8 +162,8 @@ include_once('../asterios-config/secure-news.php');
                                 <img src="<?php echo $pht2 ?>" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
+                                         <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
                                     </div>
                                 </div>
                             </div>
@@ -153,8 +173,8 @@ include_once('../asterios-config/secure-news.php');
                                 <img src="<?php echo $pht3 ?>" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus.</p>
+                                        <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
                                     </div>
                                 </div>
                             </div>
@@ -164,8 +184,8 @@ include_once('../asterios-config/secure-news.php');
                                 <img src="<?php echo $pht4 ?>" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                        <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
                                     </div>
                                 </div>
                             </div>
@@ -175,8 +195,8 @@ include_once('../asterios-config/secure-news.php');
                                 <img src="<?php echo $pht5 ?>" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                        <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
                                     </div>
                                 </div>
                             </div>
@@ -186,17 +206,61 @@ include_once('../asterios-config/secure-news.php');
                                 <img src="<?php echo $pht6 ?>" alt="">
                                 <div class="project-hover">
                                     <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                         <!--h5><a href="#">Wait new version</a></h5>
+                                        <p>coming soon</p-->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div> <!-- .projects-holder -->
                     </div>
-                    <hr>
                     
+                    </details>
+                    <hr>
+                      <div class="page-section" id="shop">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">My Shop Item</h4>
+                            <p>My item in my Shop.</p>
+                        </div>
+                    </div>
+                    
+                    <details>
+                        
+                             
+                    <div class="row projects-holder">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="<?php echo $shp0 ?>">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#"><?php echo $shp0_title ?></a></h5>
+                                        <p>Price: <?php echo $shp0_price ?></p> 
+                                        <p><?php echo $shp0_content ?></p>
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    <div class="row projects-holder">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="<?php echo $shp1 ?>">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#"><?php echo $shp1_title ?></a></h5>
+                                        <p>Price: <?php echo $shp1_price ?></p> 
+                                        <p><?php echo $shp1_content ?></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </details>
+                    
+<hr>
                     
               <!-- CONTACT -->
                     <div class="page-section" id="contact">

@@ -1,6 +1,6 @@
 <?php
 $lang = [
-    'sitename' => 'Asterios CMS v1',
+    'sitename' => 'Asterios CMS v1.3',
     'error404' => 'Error 404 Page not Found',
     '404text' => 'OOPS! PAGE NOT FOUND',
     '404' => '404',
