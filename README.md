@@ -10,4 +10,4 @@ Enter your ProfileId
 to obtain an api key here https://asterios.ws/dev/api_key
 <h5>! Rename file "rename.htaccess" to ".htaccess"</h5>
 
-<img src="https://asterios.ws/post/asterios_846a711fbd.jpg">
+<img src="https://asterios.ws/post/asterios_38853gceca.jpg">
