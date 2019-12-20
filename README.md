@@ -12,4 +12,4 @@ to obtain an api key here https://asterios.ws/dev/api_key
 
 <img src="https://vpn-photo.server-russia.asterios.ws/?img=https://asterios.ws/post/asterios_7g21e2g64c.jpg">
 
-# <a href="http://msnkt.tk"/> <strong> Demo </strong> </a>
+# <a href="http://v2.msnkt.tk"/> <strong> Demo </strong> </a>
